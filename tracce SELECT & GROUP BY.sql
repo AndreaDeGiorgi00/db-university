@@ -14,10 +14,11 @@ SELECT `name` , `date_of_birth` FROM `students` WHERE YEAR(`date_of_birth`) < '1
 SELECT `period` , `year` , `name` FROM `courses` WHERE `period` = 'I semestre' AND `year` = 1;
 -- 5. Selezionare tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 14) del 20/06/2020 (21)
 
+SELECT `hour` , `location` , `date` FROM `exams` WHERE `hour` > '14:00:00' AND `date` = '2020/06/20';
 
 -- 6. Selezionare tutti i corsi di laurea magistrale (38)
 
-
+SELECT `level`, `name` FROM `degrees` WHERE `level` = 'magistrale';
 -- 7. Da quanti dipartimenti è composta l'università? (12)
 
 
